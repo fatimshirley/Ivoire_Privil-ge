@@ -1,0 +1,480 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Résidences</title>
+    <link rel="stylesheet" href="residences.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <div class="logo">
+        <img src="Images/logo.png" alt="Ivoire Privilege" />
+      </div>
+
+      <nav class="nav">
+        <a href="../index.html" class="nav-link">Accueil</a>
+        <a href="residences.html" class="nav-link">Résidences</a>
+        <a href="services.html" class="nav-link">Services</a>
+        <a href="connexion.html" class="nav-link">Connexion</a>
+      </nav>
+      <a href="reserver.html">
+        <button class="btn-reserver">Réserver</button>
+      </a>
+    </header>
+
+    <div class="search-box">
+      <input type="text" placeholder="Rechercher une résidence..." />
+      <button>
+        <i class="fa-solid fa-magnifying-glass"></i>
+      </button>
+    </div>
+
+    <div class="container">
+      <div class="filters">
+        <div class="filter-group">
+          <label>Quartier</label>
+          <div class="select-wrapper">
+            <select>
+              <option>Tous les quartiers</option>
+              <option>Cocody</option>
+              <option>Plateau</option>
+              <option>Marcory</option>
+            </select>
+            <i class="fa-solid fa-chevron-down select-arrow"></i>
+          </div>
+        </div>
+        <div class="divider"></div>
+
+        <div class="filter-group">
+          <label>Statut</label>
+          <div class="select-wrapper">
+            <select>
+              <option>Tous les statuts</option>
+              <option>Disponible</option>
+              <option>Occupé</option>
+            </select>
+            <i class="fa-solid fa-chevron-down select-arrow"></i>
+          </div>
+        </div>
+        <div class="divider"></div>
+
+        <div class="filter-group">
+          <label>Type</label>
+          <div class="select-wrapper">
+            <select>
+              <option>Tous les types</option>
+              <option>Villa</option>
+              <option>Appartement</option>
+              <option>Penthouse</option>
+            </select>
+            <i class="fa-solid fa-chevron-down select-arrow"></i>
+          </div>
+        </div>
+        <div class="divider"></div>
+
+        <div class="filter-buttons">
+          <button class="btn-reset">Réinitialiser</button>
+          <button class="btn-apply">Appliquer</button>
+        </div>
+      </div>
+
+      <div class="residences-grid">
+        <div class="residence-card">
+          <div class="card-image">
+            <img src="/Pages/Images/p2.png" alt="Villa Emeraude" />
+            <span class="badge badge-disponible"> Disponible </span>
+          </div>
+
+          <div class="card-content">
+            <div class="card-header">
+              <div>
+                <p class="card-location">
+                  <i class="fa-solid fa-location-dot"></i>
+                  Cocody Palmeraie
+                </p>
+                <h3 class="card-title">Villa Emeraude</h3>
+              </div>
+              <p class="card-price">50.000 Fr / Heure</p>
+            </div>
+
+            <p class="card-details">
+              <i class="fa-solid fa-bed"></i>
+              5 chambres
+              <i class="fa-solid fa-couch"></i>
+              2 salons
+            </p>
+
+            <div class="card-actions">
+              <a href="reserver.html">
+                <button class="btn-outline">Réserver</button>
+              </a>
+
+              <a href="details.html#villa-emeraude">
+                <button class="btn-primary">DÉTAILS</button>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="residence-card">
+          <div class="card-image">
+            <img src="/Pages/Images/p3.png" alt="Skyline Penthouse" />
+            <span class="badge badge-occupe"> Occupé </span>
+          </div>
+
+          <div class="card-content">
+            <div class="card-header">
+              <div>
+                <p class="card-location">
+                  <i class="fa-solid fa-location-dot"></i>
+                  Plateau Central
+                </p>
+                <h3 class="card-title">Skyline Penthouse</h3>
+              </div>
+              <p class="card-price">30.000 Fr / Heure</p>
+            </div>
+
+            <p class="card-details">
+              <i class="fa-solid fa-bed"></i>
+              3 chambres
+              <i class="fa-solid fa-couch"></i>
+              1 salon
+            </p>
+
+            <div class="card-actions">
+              <a href="reserver.html">
+                <button class="btn-outline">Réserver</button>
+              </a>
+
+              <a href="details.html#skyline-penthouse">
+                <button class="btn-primary">DÉTAILS</button>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="residences-grid">
+        <div class="residence-card">
+          <div class="card-image">
+            <img src="/Pages/Images/p4.png" alt="Résidence Ivoire II" />
+            <span class="badge badge-disponible"> Disponible </span>
+          </div>
+
+          <div class="card-content">
+            <div class="card-header">
+              <div>
+                <p class="card-location">
+                  <i class="fa-solid fa-location-dot"></i>
+                  Riviera Golf
+                </p>
+                <h3 class="card-title">Résidence Ivoire II</h3>
+              </div>
+              <p class="card-price">50.000 Fr / Heure</p>
+            </div>
+
+            <p class="card-details">
+              <i class="fa-solid fa-bed"></i>
+              5 chambres
+              <i class="fa-solid fa-couch"></i>
+              2 salons
+            </p>
+
+            <div class="card-actions">
+              <a href="reserver.html">
+                <button class="btn-outline">Réserver</button>
+              </a>
+
+              <a href="details.html#esidence-ivoire-2">
+                <button class="btn-primary">DÉTAILS</button>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="residence-card">
+          <div class="card-image">
+            <img src="/Pages/Images/p5.png" alt="Domaine des Palmes" />
+            <span class="badge badge-occupe"> Occupé </span>
+          </div>
+
+          <div class="card-content">
+            <div class="card-header">
+              <div>
+                <p class="card-location">
+                  <i class="fa-solid fa-location-dot"></i>
+                  Marcory Zone 4
+                </p>
+                <h3 class="card-title">Domaine des Palmes</h3>
+              </div>
+              <p class="card-price">30.000 Fr / Heure</p>
+            </div>
+
+            <p class="card-details">
+              <i class="fa-solid fa-bed"></i>
+              3 chambres
+              <i class="fa-solid fa-couch"></i>
+              1 salon
+            </p>
+
+            <div class="card-actions">
+              <a href="reserver.html">
+                <button class="btn-outline">Réserver</button>
+              </a>
+
+              <a href="details.html#domaine-des-palmes">
+                <button class="btn-primary">DÉTAILS</button>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="residences-grid">
+        <div class="residence-card">
+          <div class="card-image">
+            <img src="/Pages/Images/p.png" alt="Villa Horizon Azur" />
+            <span class="badge badge-disponible"> Disponible </span>
+          </div>
+
+          <div class="card-content">
+            <div class="card-header">
+              <div>
+                <p class="card-location">
+                  <i class="fa-solid fa-location-dot"></i>
+                  Cocody Riviera 3
+                </p>
+                <h3 class="card-title">Villa Horizon Azur</h3>
+              </div>
+              <p class="card-price">50.000 Fr / Heure</p>
+            </div>
+
+            <p class="card-details">
+              <i class="fa-solid fa-bed"></i>
+              5 chambres
+              <i class="fa-solid fa-couch"></i>
+              2 salons
+            </p>
+
+            <div class="card-actions">
+              <a href="reserver.html">
+                <button class="btn-outline">Réserver</button>
+              </a>
+
+              <a href="details.html#villa-horizon-azur">
+                <button class="btn-primary">DÉTAILS</button>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="residence-card">
+          <div class="card-image">
+            <img src="/Pages/Images/p2.png" alt="Le Zen Loft" />
+            <span class="badge badge-occupe"> Occupé </span>
+          </div>
+
+          <div class="card-content">
+            <div class="card-header">
+              <div>
+                <p class="card-location">
+                  <i class="fa-solid fa-location-dot"></i>
+                  Riviera Palmeraie
+                </p>
+                <h3 class="card-title">Le Zen Loft</h3>
+              </div>
+              <p class="card-price">30.000 Fr / Heure</p>
+            </div>
+
+            <p class="card-details">
+              <i class="fa-solid fa-bed"></i>
+              3 chambres
+              <i class="fa-solid fa-couch"></i>
+              1 salon
+            </p>
+
+            <div class="card-actions">
+              <a href="reserver.html">
+                <button class="btn-outline">Réserver</button>
+              </a>
+
+              <a href="details.html#le-zen-loft">
+                <button class="btn-primary">DÉTAILS</button>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="residences-grid">
+        <div class="residence-card">
+          <div class="card-image">
+            <img src="/Pages/Images/p8.png" alt="Villa Prestige" />
+            <span class="badge badge-disponible"> Disponible </span>
+          </div>
+
+          <div class="card-content">
+            <div class="card-header">
+              <div>
+                <p class="card-location">
+                  <i class="fa-solid fa-location-dot"></i>
+                  Angré 8ème Tranche
+                </p>
+                <h3 class="card-title">Villa Prestige</h3>
+              </div>
+              <p class="card-price">50.000 Fr / Heure</p>
+            </div>
+
+            <p class="card-details">
+              <i class="fa-solid fa-bed"></i>
+              5 chambres
+              <i class="fa-solid fa-couch"></i>
+              2 salons
+            </p>
+
+            <div class="card-actions">
+              <a href="reserver.html">
+                <button class="btn-outline">Réserver</button>
+              </a>
+
+              <a href="details.html#villa-prestige">
+                <button class="btn-primary">DÉTAILS</button>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="residence-card">
+          <div class="card-image">
+            <img src="/Pages/Images/p.png" alt="Les jardins de Beverly" />
+            <span class="badge badge-occupe"> Occupé </span>
+          </div>
+
+          <div class="card-content">
+            <div class="card-header">
+              <div>
+                <p class="card-location">
+                  <i class="fa-solid fa-location-dot"></i>
+                  2 Plateaux
+                </p>
+                <h3 class="card-title">Les jardins de Beverly</h3>
+              </div>
+              <p class="card-price">30.000 Fr / Heure</p>
+            </div>
+
+            <p class="card-details">
+              <i class="fa-solid fa-bed"></i>
+              Une chambre
+              <i class="fa-solid fa-couch"></i>
+              Un salon
+            </p>
+
+            <div class="card-actions">
+              <a href="reserver.html">
+                <button class="btn-outline">Réserver</button>
+              </a>
+
+              <a href="details.html#les-jardins-de-beverly">
+                <button class="btn-primary">DÉTAILS</button>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="footer-col">
+          <div class="footer-logo">
+            <img src="Images/logo.png" alt="Ivoire Privilege" />
+          </div>
+          <p class="footer-description">
+            Chez Ivoire Privilege, nous mettons l'accent sur le confort, la
+            qualité de l'accueil et l'excellence de nos services afin de rendre
+            chaque séjour unique et agréable.
+          </p>
+        </div>
+
+        <div class="footer-col">
+          <h3 class="footer-title">NAVIGATION</h3>
+          <ul class="footer-links">
+            <li>
+              <a href="/index.html"
+                ><i class="fa-solid fa-angle-right arrow"></i> Accueil</a
+              >
+            </li>
+            <li>
+              <a href="residences.html"
+                ><i class="fa-solid fa-angle-right arrow"></i> Résidences</a
+              >
+            </li>
+            <li>
+              <a href="services.html"
+                ><i class="fa-solid fa-angle-right arrow"></i> Services</a
+              >
+            </li>
+            <li>
+              <a href="/Pages/reserver.html"
+                ><i class="fa-solid fa-angle-right arrow"></i> Réservation</a
+              >
+            </li>
+            <li>
+              <a href="connexion.html"
+                ><i class="fa-solid fa-angle-right arrow"></i> Connexion</a
+              >
+            </li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h3 class="footer-title">CONTACTEZ-NOUS</h3>
+          <ul class="contact-list">
+            <li>
+              <i class="fa-solid fa-location-dot contact-icon"></i>
+              <span>Abidjan, Côte d'Ivoire</span>
+            </li>
+            <li>
+              <i class="fa-solid fa-phone contact-icon"></i>
+              <span>0707 538 526</span>
+            </li>
+            <li>
+              <i class="fa-solid fa-envelope contact-icon"></i>
+              <span>ivoireprestige@gmail.ci</span>
+            </li>
+          </ul>
+          <h3 class="footer-title social-title">SUIVEZ-NOUS</h3>
+          <div class="social-icons">
+            <a href="#" aria-label="Facebook">
+              <i class="fa-brands fa-facebook-f"></i>
+            </a>
+            <a href="#" aria-label="Instagram">
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+            <a href="#" aria-label="WhatsApp">
+              <i class="fa-brands fa-whatsapp"></i>
+            </a>
+            <a href="#" aria-label="LinkedIn">
+              <i class="fa-brands fa-linkedin-in"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>
+          <i class="fa-solid fa-copyright"></i>
+          2026 Ivoire Privilege. Tous les droits reserves.
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Inscription</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="connexion.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="icon-header">
+        <i class="fas fa-user-plus fa-3x"></i>
+        <h2>Inscrivez-vous</h2>
+      </div>
+
+      <form action="#" method="POST">
+        <div class="input-group">
+          <i class="fas fa-user"></i>
+          <input
+            type="text"
+            name="nom_complet"
+            placeholder="Nom complet"
+            required
+          />
+        </div>
+
+        <div class="input-group">
+          <i class="fas fa-user"></i>
+
+          <select name="role" required>
+            <option value="" selected disabled>Rôle</option>
+            <option value="client">Client</option>
+            <option value="proprietaire">Propriétaire</option>
+          </select>
+
+          <i class="fa-solid fa-chevron-down select-arrow"></i>
+        </div>
+
+        <div class="input-group">
+          <i class="fas fa-envelope"></i>
+          <input type="email" name="email" placeholder="Email" required />
+        </div>
+
+        <div class="input-group">
+          <i class="fas fa-lock"></i>
+          <input
+            type="password"
+            name="password"
+            placeholder="Mot de passe"
+            required
+          />
+        </div>
+
+        <div class="input-group">
+          <i class="fas fa-lock"></i>
+          <input
+            type="password"
+            name="confirm-password"
+            placeholder="Confirmer le mot de passe"
+            required
+          />
+        </div>
+
+        <input type="submit" value="Envoyer" class="btn" />
+      </form>
+      <h5>
+        <a href="connexion.html"> Déjà Inscrit ? Connectez-vous</a>
+      </h5>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,246 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Réserver</title>
+    <link rel="stylesheet" href="reserver.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <div class="logo">
+        <img src="Images/logo.png" alt="Ivoire Privilege" />
+      </div>
+
+      <nav class="nav">
+        <a href="../index.html" class="nav-link">Accueil</a>
+        <a href="residences.html" class="nav-link">Résidences</a>
+        <a href="services.html" class="nav-link">Services</a>
+        <a href="connexion.html" class="nav-link">Connexion</a>
+      </nav>
+      <a href="reserver.html">
+        <button class="btn-reserver">Réserver</button>
+      </a>
+    </header>
+
+    <div class="reservation-container">
+      <h1>Réserver maintenant</h1>
+
+      <form class="reservation-form">
+        <section class="form-section">
+          <h2>DÉTAILS DE LA RÉSERVATION</h2>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label>ARRIVÉE</label>
+              <input
+                type="text"
+                value="12 Mai 2024"
+                placeholder="JJ Mois AAAA"
+              />
+            </div>
+            <div class="form-group">
+              <label>DÉPART</label>
+              <input
+                type="text"
+                value="12 Mai 2024"
+                placeholder="JJ Mois AAAA"
+              />
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label>ADULTES</label>
+              <select>
+                <option>0 Adultes</option>
+                <option>1 Adultes</option>
+                <option>2 Adulte</option>
+                <option>3 Adultes</option>
+                <option>4 Adultes</option>
+                <option>5 Adultes</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label>ENFANTS</label>
+              <select>
+                <option>0 Enfant</option>
+                <option>1 Enfant</option>
+                <option>2 Enfants</option>
+                <option>3 Enfants</option>
+                <option>4 Enfants</option>
+                <option>5 Enfants</option>
+              </select>
+            </div>
+          </div>
+        </section>
+
+        <section class="form-section2">
+          <h2>INFORMATIONS PERSONNELLES</h2>
+
+          <div class="form-group1">
+            <label>NOM COMPLET</label>
+            <input type="text" placeholder="Ex: Sidibé Fatoumata" />
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label>EMAIL</label>
+              <input type="email" placeholder="fatoumatasidibe@gmail.ci" />
+            </div>
+            <div class="form-group">
+              <label>TÉLÉPHONE</label>
+              <input type="tel" placeholder="+225 0707 598 526" />
+            </div>
+          </div>
+        </section>
+
+        <section class="form-section2">
+          <h2>SERVICES ADDITIONNELS</h2>
+
+          <div class="checkbox-group">
+            <label><input type="checkbox" /> Transfert Aéroport</label>
+            <label><input type="checkbox" /> Chef à domicile</label>
+            <label><input type="checkbox" /> Ménage quotidien</label>
+          </div>
+        </section>
+
+        <section class="form-section2">
+          <h2>RÉCAPITULATIF FINANCIER</h2>
+
+          <div class="recap">
+            <div class="recap-row">
+              <span>7 Nuits x 450 000 FCFA</span>
+              <span>3 150 000 FCFA</span>
+            </div>
+            <div class="recap-row">
+              <span>Frais de service (5%)</span>
+              <span>157 500 FCFA</span>
+            </div>
+            <div class="recap-row">
+              <span>Chef à domicile</span>
+              <span>75 000 FCFA</span>
+            </div>
+            <div class="recap-row total">
+              <span>TOTAL</span>
+              <span>3 382 500 FCFA</span>
+            </div>
+          </div>
+        </section>
+
+        <section class="form-section2">
+          <h2>MODE DE PAIEMENT</h2>
+
+          <div class="radio-group">
+            <label
+              ><input type="radio" name="paiement" checked /> Mobile
+              Money</label
+            >
+            <label><input type="radio" name="paiement" /> Carte bancaire</label>
+            <label><input type="radio" name="paiement" /> Virement</label>
+          </div>
+        </section>
+
+        <button type="submit" class="btn-submit">
+          CONFIRMER LA RÉSERVATION
+        </button>
+
+        <p class="foot">PAIEMENT SÉCURISÉ PAR IVOIRE PRIVILÈGE</p>
+      </form>
+    </div>
+
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="footer-col">
+          <div class="footer-logo">
+            <img src="Images/logo.png" alt="Ivoire Privilege" />
+          </div>
+          <p class="footer-description">
+            Chez Ivoire Privilege, nous mettons l'accent sur le confort, la
+            qualité de l'accueil et l'excellence de nos services afin de rendre
+            chaque séjour unique et agréable.
+          </p>
+        </div>
+
+        <div class="footer-col">
+          <h3 class="footer-title">NAVIGATION</h3>
+          <ul class="footer-links">
+            <li>
+              <a href="/index.html"
+                ><i class="fa-solid fa-angle-right arrow"></i> Accueil</a
+              >
+            </li>
+            <li>
+              <a href="residences.html"
+                ><i class="fa-solid fa-angle-right arrow"></i> Résidences</a
+              >
+            </li>
+            <li>
+              <a href="services.html"
+                ><i class="fa-solid fa-angle-right arrow"></i> Services</a
+              >
+            </li>
+            <li>
+              <a href="/Pages/reserver.html"
+                ><i class="fa-solid fa-angle-right arrow"></i> Réservation</a
+              >
+            </li>
+            <li>
+              <a href="connexion.html"
+                ><i class="fa-solid fa-angle-right arrow"></i> Connexion</a
+              >
+            </li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h3 class="footer-title">CONTACTEZ-NOUS</h3>
+          <ul class="contact-list">
+            <li>
+              <i class="fa-solid fa-location-dot contact-icon"></i>
+              <span>Abidjan, Côte d'Ivoire</span>
+            </li>
+            <li>
+              <i class="fa-solid fa-phone contact-icon"></i>
+              <span>0707 538 526</span>
+            </li>
+            <li>
+              <i class="fa-solid fa-envelope contact-icon"></i>
+              <span>ivoireprestige@gmail.ci</span>
+            </li>
+          </ul>
+          <h3 class="footer-title social-title">SUIVEZ-NOUS</h3>
+          <div class="social-icons">
+            <a href="#" aria-label="Facebook">
+              <i class="fa-brands fa-facebook-f"></i>
+            </a>
+            <a href="#" aria-label="Instagram">
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+            <a href="#" aria-label="WhatsApp">
+              <i class="fa-brands fa-whatsapp"></i>
+            </a>
+            <a href="#" aria-label="LinkedIn">
+              <i class="fa-brands fa-linkedin-in"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>
+          <i class="fa-solid fa-copyright"></i>
+          2026 Ivoire Privilege. Tous les droits reserves.
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,90 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  background-color: #ffffff;
+  padding: 40px 30px;
+  border-radius: 35px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+  width: 320px;
+  border: 1px solid #c8643a;
+}
+
+.icon-header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.icon-header i {
+  color: #c8643a;
+}
+
+.icon-header h2 {
+  margin-top: 10px;
+  border: #393333;
+}
+
+.input-group {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+  border: 1px solid #c8643a;
+  padding: 10px;
+  background-color: white;
+  position: relative;
+}
+
+.input-group i {
+  margin-right: 10px;
+  color: #c8643a;
+}
+
+.input-group input,
+.input-group select {
+  border: none;
+  outline: none;
+  flex: 1;
+  font-size: 14px;
+  background-color: transparent;
+  appearance: none;
+  cursor: pointer;
+  color: grey;
+}
+
+.select-arrow {
+  position: absolute;
+  right: 14px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #c8643a;
+  pointer-events: none;
+}
+
+.btn {
+  width: 100%;
+  padding: 18px;
+  border: none;
+  background-color: #c8643a;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.btn:hover {
+  background-color: #300808;
+}
+
+h5 {
+  text-align: center;
+}
+h5 a {
+  color: black;
+  text-decoration: none;
+}
