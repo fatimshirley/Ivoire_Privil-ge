@@ -39,7 +39,8 @@ body {
 .nav {
   display: flex;
   gap: 45px;
-  margin-left: 40%;
+  margin-left: auto;
+  margin-right: 80px;
 }
 
 .nav-link {
@@ -69,25 +70,6 @@ body {
 
 .btn-reserver:hover {
   background-color: #632525;
-}
-
-@media (max-width: 900px) {
-  .header {
-    padding: 15px 20px;
-  }
-
-  .nav {
-    display: none;
-  }
-
-  .logo img {
-    width: 70px;
-  }
-
-  .btn-reserver {
-    padding: 8px 14px;
-    font-size: 13px;
-  }
 }
 
 .search-box {
@@ -359,41 +341,8 @@ body {
   background-color: #4f1d1d;
 }
 
-@media (max-width: 768px) {
-  body {
-    padding: 20px;
-  }
-
-  .filters {
-    padding: 20px;
-  }
-
-  .filter-buttons {
-    width: 100%;
-    flex-direction: column;
-  }
-
-  .btn-reset,
-  .btn-apply {
-    width: 100%;
-  }
-
-  .residences-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .card-header {
-    flex-direction: column;
-    gap: 8px;
-  }
-
-  .card-actions {
-    flex-direction: column;
-  }
-}
-
 .footer {
-  color: var(--color-text-light);
+  color: white;
   padding: 60px 60px 20px;
   margin-top: auto;
   background-color: #300808;
@@ -528,6 +477,23 @@ body {
 }
 
 @media (max-width: 900px) {
+  .header {
+    padding: 15px 20px;
+  }
+
+  .nav {
+    display: none;
+  }
+
+  .logo img {
+    width: 70px;
+  }
+
+  .btn-reserver {
+    padding: 8px 14px;
+    font-size: 13px;
+  }
+
   .footer {
     padding: 50px 30px 20px;
   }
@@ -540,6 +506,55 @@ body {
   .footer-logo img {
     width: 150px;
   }
+
+  .search-box {
+    max-width: 100%;
+    margin: 100px 20px 30px;
+  }
+
+  .filters {
+    margin: 20px;
+    padding: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  body {
+    padding: 20px;
+  }
+
+  .filters {
+    padding: 20px;
+  }
+
+  .filter-buttons {
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .btn-reset,
+  .btn-apply {
+    width: 100%;
+  }
+
+  .residences-grid {
+    grid-template-columns: 1fr;
+    margin: 15px;
+    padding: 10px;
+  }
+
+  .card-header {
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .card-actions {
+    flex-direction: column;
+  }
+
+  .search-box {
+    margin: 100px 15px 20px;
+  }
 }
 
 @media (max-width: 500px) {
@@ -549,5 +564,44 @@ body {
 
   .footer-title {
     font-size: 15px;
+  }
+
+  .header {
+    padding: 10px 15px;
+  }
+
+  .logo img {
+    width: 60px;
+    height: auto;
+  }
+
+  .btn-reserver {
+    font-size: 12px;
+    padding: 6px 10px;
+  }
+
+  .search-box input {
+    font-size: 13px;
+  }
+
+  .search-box button {
+    padding: 10px 12px;
+  }
+
+  .filters {
+    margin: 10px;
+    padding: 15px;
+  }
+
+  .card-content {
+    padding: 18px;
+  }
+
+  .card-title {
+    font-size: 18px;
+  }
+
+  .card-price {
+    font-size: 14px;
   }
 }

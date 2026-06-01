@@ -70,25 +70,6 @@ body {
   background-color: #632525;
 }
 
-@media (max-width: 900px) {
-  .header {
-    padding: 15px 20px;
-  }
-
-  .nav {
-    display: none;
-  }
-
-  .logo img {
-    width: 70px;
-  }
-
-  .btn-reserver {
-    padding: 8px 14px;
-    font-size: 13px;
-  }
-}
-
 .villas-container {
   max-width: 1200px;
   margin: 0 auto;
@@ -219,31 +200,8 @@ body {
   background-color: white;
 }
 
-@media (max-width: 768px) {
-  .villa-card {
-    flex-direction: column;
-  }
-
-  .villa-image {
-    flex: 0 0 220px;
-  }
-
-  .villa-info {
-    padding: 20px;
-  }
-
-  .villa-actions {
-    justify-content: stretch;
-  }
-
-  .btn {
-    flex: 1;
-    text-align: center;
-  }
-}
-
 .footer {
-  color: var(--color-text-light);
+  color: white;
   padding: 60px 60px 20px;
   margin-top: 100px;
   background-color: #300808;
@@ -378,6 +336,23 @@ body {
 }
 
 @media (max-width: 900px) {
+  .header {
+    padding: 15px 20px;
+  }
+
+  .nav {
+    display: none;
+  }
+
+  .logo img {
+    width: 70px;
+  }
+
+  .btn-reserver {
+    padding: 8px 14px;
+    font-size: 13px;
+  }
+
   .footer {
     padding: 50px 30px 20px;
   }
@@ -389,6 +364,25 @@ body {
 
   .footer-logo img {
     width: 150px;
+  }
+}
+
+@media (max-width: 768px) {
+  .villa-card {
+    flex-direction: column;
+  }
+
+  .villa-info {
+    padding: 20px;
+  }
+
+  .villa-actions {
+    justify-content: stretch;
+  }
+
+  .btn {
+    flex: 1;
+    text-align: center;
   }
 }
 

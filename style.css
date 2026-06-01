@@ -38,7 +38,8 @@ body {
 .nav {
   display: flex;
   gap: 45px;
-  margin-left: 40%;
+  margin-left: auto;
+  margin-right: 80px;
 }
 
 .nav-link {
@@ -175,48 +176,6 @@ body {
   background-color: #b55933;
 }
 
-@media (max-width: 900px) {
-  .header {
-    padding: 20px 30px;
-  }
-
-  .nav {
-    display: none;
-  }
-
-  .hero-title {
-    font-size: 36px;
-    letter-spacing: 2px;
-  }
-
-  .hero-subtitle {
-    font-size: 16px;
-  }
-
-  .search-bar {
-    flex-direction: column;
-    padding: 0;
-  }
-
-  .search-item {
-    width: 100%;
-    border-bottom: 1px solid #d9d9d9;
-    padding: 15px 20px;
-  }
-
-  .search-item i {
-    color: #c8643a;
-  }
-
-  .divider {
-    display: none;
-  }
-
-  .btn-search {
-    width: 100%;
-  }
-}
-
 .about-section {
   padding: 100px 100px;
 }
@@ -273,35 +232,6 @@ body {
   color: gray;
 }
 
-@media (max-width: 900px) {
-  .about-section {
-    padding: 60px 30px;
-  }
-
-  .about-container {
-    grid-template-columns: 1fr;
-    gap: 40px;
-  }
-
-  .about-content {
-    padding-left: 0;
-  }
-
-  .section-title {
-    font-size: 28px;
-  }
-}
-
-@media (max-width: 500px) {
-  .about-section {
-    padding: 40px 20px;
-  }
-
-  .section-title {
-    font-size: 24px;
-  }
-}
-
 .testimonials-section {
   padding: 80px 60px;
   max-width: 1300px;
@@ -333,7 +263,7 @@ body {
 .quote-icon {
   font-family: "Playfair Display", serif;
   font-size: 48px;
-  color: var(--color-accent);
+  color: #c8643a;
   line-height: 1;
   display: block;
   margin-bottom: 15px;
@@ -342,7 +272,7 @@ body {
 .testimonial-text {
   font-size: 14px;
   line-height: 1.7;
-  color: var(--color-text-gray);
+  color: #666666;
   margin-bottom: 20px;
 }
 
@@ -368,13 +298,13 @@ body {
 .client-name {
   font-weight: 600;
   font-size: 14px;
-  color: var(--color-text-dark);
+  color: #1a1a1a;
   margin-bottom: 2px;
 }
 
 .client-type {
   font-size: 13px;
-  color: var(--color-text-gray);
+  color: #666666;
 }
 
 .stats-bar {
@@ -383,7 +313,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  color: var(--color-text-light);
+  color: white;
   background-color: #300808;
 }
 
@@ -414,50 +344,8 @@ body {
   color: white;
 }
 
-@media (max-width: 1024px) {
-  .testimonials-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-@media (max-width: 768px) {
-  .testimonials-section {
-    padding: 60px 30px;
-  }
-
-  .testimonials-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .stats-bar {
-    flex-direction: column;
-    gap: 30px;
-    padding: 30px 20px;
-  }
-
-  .divider {
-    width: 80%;
-    height: 1px;
-  }
-
-  .stat-item {
-    width: 100%;
-    justify-content: flex-start;
-  }
-}
-
-@media (max-width: 500px) {
-  .testimonials-section {
-    padding: 40px 20px;
-  }
-
-  .section-title {
-    font-size: 26px;
-  }
-}
-
 .footer {
-  color: var(--color-text-light);
+  color: white;
   padding: 60px 60px 20px;
   margin-top: auto;
   background-color: #300808;
@@ -591,7 +479,67 @@ body {
   color: #c8643a;
 }
 
+@media (max-width: 1024px) {
+  .testimonials-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
 @media (max-width: 900px) {
+  /* Header */
+  .header {
+    padding: 20px 30px;
+  }
+
+  .nav {
+    display: none;
+  }
+
+  .hero-title {
+    font-size: 36px;
+    letter-spacing: 2px;
+  }
+
+  .hero-subtitle {
+    font-size: 16px;
+  }
+
+  .search-bar {
+    flex-direction: column;
+    padding: 0;
+  }
+
+  .search-item {
+    width: 100%;
+    border-bottom: 1px solid #d9d9d9;
+    padding: 15px 20px;
+  }
+
+  .divider {
+    display: none;
+  }
+
+  .btn-search {
+    width: 100%;
+  }
+
+  .about-section {
+    padding: 60px 30px;
+  }
+
+  .about-container {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .about-content {
+    padding-left: 0;
+  }
+
+  .section-title {
+    font-size: 28px;
+  }
+
   .footer {
     padding: 50px 30px 20px;
   }
@@ -606,7 +554,40 @@ body {
   }
 }
 
+@media (max-width: 768px) {
+  .testimonials-section {
+    padding: 60px 30px;
+  }
+
+  .testimonials-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .stats-bar {
+    flex-direction: column;
+    gap: 30px;
+    padding: 30px 20px;
+  }
+
+  .stat-item {
+    width: 100%;
+    justify-content: flex-start;
+  }
+}
+
 @media (max-width: 500px) {
+  .about-section {
+    padding: 40px 20px;
+  }
+
+  .section-title {
+    font-size: 24px;
+  }
+
+  .testimonials-section {
+    padding: 40px 20px;
+  }
+
   .footer {
     padding: 40px 20px 20px;
   }

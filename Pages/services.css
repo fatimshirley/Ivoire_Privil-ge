@@ -39,7 +39,8 @@ body {
 .nav {
   display: flex;
   gap: 45px;
-  margin-left: 40%;
+  margin-left: auto;
+  margin-right: 80px;
 }
 
 .nav-link {
@@ -65,29 +66,11 @@ body {
   font-weight: 600;
   font-size: 15px;
   height: 40px;
+  margin-left: 0;
 }
 
 .btn-reserver:hover {
   background-color: #632525;
-}
-
-@media (max-width: 900px) {
-  .header {
-    padding: 15px 20px;
-  }
-
-  .nav {
-    display: none;
-  }
-
-  .logo img {
-    width: 70px;
-  }
-
-  .btn-reserver {
-    padding: 8px 14px;
-    font-size: 13px;
-  }
 }
 
 .services-section {
@@ -404,7 +387,7 @@ body {
 }
 
 .footer {
-  color: var(--color-text-light);
+  color: white;
   padding: 60px 60px 20px;
   margin-top: auto;
   background-color: #300808;
@@ -539,31 +522,6 @@ body {
 }
 
 @media (max-width: 900px) {
-  .footer {
-    padding: 50px 30px 20px;
-  }
-
-  .footer-container {
-    grid-template-columns: 1fr;
-    gap: 40px;
-  }
-
-  .footer-logo img {
-    width: 150px;
-  }
-}
-
-@media (max-width: 500px) {
-  .footer {
-    padding: 40px 20px 20px;
-  }
-
-  .footer-title {
-    font-size: 15px;
-  }
-}
-
-@media (max-width: 900px) {
   .header {
     padding: 15px 20px;
   }
@@ -602,11 +560,15 @@ body {
     padding: 50px 30px 20px;
   }
 
+  .footer-container {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
   .footer-logo img {
     width: 150px;
   }
 }
-
 @media (max-width: 768px) {
   .cards-grid {
     grid-template-columns: 1fr;
